@@ -72,7 +72,8 @@ A complete Full-Stack web application featuring a RESTful API built with **Djang
 7.  **Start the React frontend server:**
    ```bash
     npm start
-    ```
+   ```
+
 ## 🔗 API Endpoints
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
