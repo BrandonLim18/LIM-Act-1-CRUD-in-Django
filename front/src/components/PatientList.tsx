@@ -57,6 +57,8 @@ const PatientList: React.FC<Props> = ({ patients, onUpdate, onDelete }) => {
                 <div className="flex items-center gap-4 text-sm text-slate-500 font-medium">
                   <span className="flex items-center gap-1">🎂 {patient.date_of_birth}</span>
                   <span className="flex items-center gap-1">📞 {patient.phone}</span>
+                  {/* 👇 HERE IS THE NEW EMAIL LINE 👇 */}
+                  <span className="flex items-center gap-1">✉️ {patient.email}</span>
                 </div>
               </div>
               <div className="flex gap-2">
