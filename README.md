@@ -1,6 +1,6 @@
 # 🏥 Doctor-Patient Appointment System
 
-A simple RESTful API built using **Django** and **Django Rest Framework (DRF)**. This system allows users to manage records for doctors, patients, and their appointments.
+A complete Full-Stack web application featuring a RESTful API built with **Django** and **Django Rest Framework (DRF)**, seamlessly connected to a modern, glassmorphism-styled **React & TypeScript** frontend. This system allows users to seamlessly manage records for doctors, patients, and their scheduled appointments.
 
 
 ## ✨ Features
