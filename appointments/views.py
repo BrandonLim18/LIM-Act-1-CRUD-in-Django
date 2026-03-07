@@ -1,30 +1,31 @@
-from rest_framework import generics
+from django.shortcuts import render
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from .models import Doctor, Patient, Appointment
 from .serializers import DoctorSerializer, PatientSerializer, AppointmentSerializer
 
 # --- DOCTOR VIEWS ---
-class DoctorListCreateView(generics.ListCreateAPIView):
+class DoctorListCreateView(ListCreateAPIView):
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
 
-class DoctorRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class DoctorRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
 
 # --- PATIENT VIEWS ---
-class PatientListCreateView(generics.ListCreateAPIView):
+class PatientListCreateView(ListCreateAPIView):
     queryset = Patient.objects.all()
     serializer_class = PatientSerializer
 
-class PatientRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class PatientRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     queryset = Patient.objects.all()
     serializer_class = PatientSerializer
 
 # --- APPOINTMENT VIEWS ---
-class AppointmentListCreateView(generics.ListCreateAPIView):
+class AppointmentListCreateView(ListCreateAPIView):
     queryset = Appointment.objects.all()
     serializer_class = AppointmentSerializer
 
-class AppointmentRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class AppointmentRetrieveUpdateDestroyView(RetrieveUpdateDestroyAPIView):
     queryset = Appointment.objects.all()
     serializer_class = AppointmentSerializer
